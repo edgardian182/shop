@@ -1,0 +1,280 @@
+
+<div class="container-fluid text-center">
+  
+  <div class="row content">
+
+<!-- MENU LATERAL -->
+
+    <div class="col-sm-2 sidenav">
+      <!-- <div class="list-group">
+        <p><a href="#" class="list-group-item active">Motos</a></p>
+        <p><a href="#" class="list-group-item">Autos</a></p>
+        <p><a href="#" class="list-group-item">Aviones</a></p>
+        <p><a href="#" class="list-group-item">Helicopteros</a></p>
+      </div> -->
+
+
+
+
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Motos</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class=""><%= link_to '600cc', power_path, class:"list-group-item" %></div>
+        <div class=""><%= link_to '1000cc', power1000_path, class:"list-group-item active" %></div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Autos</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Contenido autos</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Aviones</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Contenido aviones</div>
+      </div>
+    </div>
+  </div> 
+
+
+
+
+
+
+    </div>
+
+<!-- FIN MENU LATERAL -->
+
+    <div class="col-sm-10">
+      <!-- FILA UNO -->
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/r1.jpg", width:"100%", height:"200px" %>
+            <a href="#r1modal" data-toggle="modal" class="list-group-item milink">YZF-R1</a>
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="r1modal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/r1.jpg", class:"img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p><span style="font-weight:bold">Marca:</span> Yamaha </p>
+                    <p><span style="font-weight:bold">Motor:</span> 998cc</p>
+                    <p><span style="font-weight:bold">Potencia:</span> 198Hp</p>
+                    <p><span style="font-weight:bold">Capacidad tanque:</span> 17 L</p>
+                    <p><span style="font-weight:bold">Vigencia:</span> Desde 2015</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/zx10r.jpg", width:"100%", height:"200px" %>
+            <a href="#zx10rmodal" data-toggle="modal" class="list-group-item milink">ZX10R</a>
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="zx10rmodal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/zx10r.jpg", class:"img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p>Marca: Kawasaki </p>
+                    <p>Motor: 998cc</p>
+                    <p>Potencia: 198Hp</p>
+                    <p>Capacidad tanque: 17 L</p>
+                    <p>Vigencia: Desde 2016</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/gsxr1000.jpg", width:"100%", height:"200px" %>
+            <a href="#gsxr1000modal" data-toggle="modal" class="list-group-item milink">GSXR1000</a>
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="gsxr1000modal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/gsxr1000.jpg", class:"img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p>Marca: Suzuki </p>
+                    <p>Motor: 999cc</p>
+                    <p>Potencia: 180Hp</p>                       <p>Capacidad tanque: 17.5 L</p>
+                    <p>Vigencia: Desde 2016</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+      </div>
+    <!-- FINAL DE LA FILA UNO -->
+
+    <!-- FILA DOS -->
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/cbr1000rr.jpg", width:"100%", height:"200px" %>
+            <a href="#cbr1000modal" data-toggle="modal" class="list-group-item milink">CBR1000RR</a>
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="cbr1000modal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/cbr1000rr.jpg", class:"img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p>Marca: Honda </p>
+                    <p>Motor: 999.8cc</p>
+                    <p>Potencia: 178Hp</p>                       <p>Capacidad tanque: 17.5 L</p>
+                    <p>Vigencia: Desde 2012</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/rsv4rf.jpg", width:"100%", height:"200px" %>
+            <a href="#rsv4rfmodal" data-toggle="modal" class="list-group-item milink">RSV4RF</a>
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="rsv4rfmodal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/rsv4rf.jpg", class:"img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p>Marca: Aprilia </p>
+                    <p>Motor: 999.6cc</p>
+                    <p>Potencia: 201Hp</p>                       <p>Capacidad tanque: 18.5 L</p>
+                    <p>Vigencia: Desde 2014</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/f4.jpg", width:"100%", height:"200px" %>
+            <a href="#f4modal" data-toggle="modal" class="list-group-item milink">F4</a>
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="f4modal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/f4.jpg", class:"img-responsive" %>
+                    <div class="modal-body">
+                      <p><span style="font-weight:bold">Marca:</span> MV Agusta </p>
+                      <p><span style="font-weight:bold">Motor:</span> 998cc</p>
+                      <p><span style="font-weight:bold">Potencia:</span> 201Hp</p>          
+                      <p><span style="font-weight:bold">Capacidad tanque:</span> 17 L</p>
+                      <p><span style="font-weight:bold">Vigencia:</span> Desde 2014</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+       </div>
+      </div>
+    <!-- FINAL FILA DOS -->
+
+    <!-- PAGINACION -->
+
+    <div class="row">
+      <div clas="col-sm-12 text-center">
+        <ul class="pagination pagination-sm">
+          <li class="active"><a href="home.html">1</a></li>
+          <li><a href="#">2</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FIN PAGINACION -->
+
+    </div>
+
+    
+
+  </div>
+</div>
+
+<footer class="cotainer-fluid text-center">
+  <p>Todos los derechos reservados</p>
+</footer>
+
+
+</body>
+</html>

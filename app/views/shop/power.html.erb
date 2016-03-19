@@ -1,0 +1,316 @@
+
+
+<div class="container-fluid text-center">
+  
+  <div class="row content">
+
+<!-- MENU LATERAL -->
+
+    <div class="col-sm-2 sidenav">
+      <!-- <div class="list-group">
+        <p><a href="#" class="list-group-item active">Motos</a></p>
+        <p><a href="#" class="list-group-item">Autos</a></p>
+        <p><a href="#" class="list-group-item">Aviones</a></p>
+        <p><a href="#" class="list-group-item">Helicopteros</a></p>
+      </div> -->
+
+
+
+
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Motos</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class=""><%= link_to '600cc', power_path, class:"list-group-item active" %></div>
+        <div class=""><%= link_to '1000cc', power1000_path, class:"list-group-item" %></div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Autos</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Contenido autos</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Aviones</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Contenido aviones</div>
+      </div>
+    </div>
+  </div> 
+
+
+
+
+
+
+    </div>
+
+<!-- FIN MENU LATERAL -->
+
+    <div class="col-sm-10">
+      <!-- FILA UNO -->
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/r6.jpg", width:"100%", height:"200px" %>
+
+            <!-- DESPLEGABLE OPCIONES -->
+            <div class="btn-group btn-group-justified">
+            <a href="#" data-toggle="dropdown" class="list-group-item milink dropdown-toggle">YZF-R6</a>
+              <ul class="dropdown-menu" style="width:100%" role="menu">
+                <!-- primer link conecta con el MODAL -->
+                <li><a href="#r6modal" data-toggle="modal" class="">Ficha Técnica</a></li>
+                <li><%= link_to'Galeria', power_r6galeria_path, class:"" %></li>
+                <li><%= link_to 'Comprar', power_r6venta_path %></li>
+              </ul>
+            </div>
+            <!-- FIN DESPLEGABLE OPCIONES -->
+              
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="r6modal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/r6.jpg", class:"img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p><span style="font-weight:bold">Marca:</span> Yamaha </p>
+                    <p><span style="font-weight:bold">Motor:</span> 599cc</p>
+                    <p><span style="font-weight:bold">Potencia:</span> 118Hp</p>
+                    <p><span style="font-weight:bold">Capacidad tanque:</span> 17.3 L</p>
+                    <p><span style="font-weight:bold">Vigencia:</span> Desde 2007</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/zx6r.jpg", width:"100%", height:"200px" %>
+
+            <!-- DESPLEGABLE OPCIONES -->
+            <div class="btn-group btn-group-justified">
+            <a href="#" data-toggle="dropdown" class="list-group-item milink dropdown-toggle">ZX6R</a>
+            <ul class="dropdown-menu" style="width:100%" role="menu">
+            <!-- primer link conecta con el MODAL -->
+            <li><a href="#zx6rmodal" data-toggle="modal" class="">Ficha Técnica</a></li>
+            <li><a href="#" class="">Galeria</a></li>
+            <li><a href="#">Comprar</a></li>
+              </ul>
+            </div>
+            <!-- FIN DESPLEGABLE OPCIONES -->
+
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="zx6rmodal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/zx6r.jpg", class:"img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p>Marca: Kawasaki </p>
+                    <p>Motor: 636cc</p>
+                    <p>Potencia: 131Hp</p>
+                    <p>Capacidad tanque: 17 L</p>
+                    <p>Vigencia: Desde 2013</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/gsxr600.png", width:"100%", height:"200px" %>
+            <!-- DESPLEGABLE OPCIONES -->
+            <div class="btn-group btn-group-justified">
+            <a href="#" data-toggle="dropdown" class="list-group-item milink dropdown-toggle">GSXR600</a>
+            <ul class="dropdown-menu" style="width:100%" role="menu">
+            <!-- primer link conecta con el MODAL -->
+            <li><a href="#gsxr600modal" data-toggle="modal" class="">Ficha Técnica</a></li>
+            <li><a href="#" class="">Galeria</a></li>
+            <li><a href="#">Comprar</a></li>
+              </ul>
+            </div>
+            <!-- FIN DESPLEGABLE OPCIONES -->
+
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="gsxr600modal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/gsxr600.png", class:"img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p>Marca: Suzuki </p>
+                    <p>Motor: 599cc</p>
+                    <p>Potencia: 124Hp</p>                       <p>Capacidad tanque: 16.5 L</p>
+                    <p>Vigencia: Desde 2011</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+      </div>
+    <!-- FINAL DE LA FILA UNO -->
+
+    <!-- FILA DOS -->
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/cbr600.png", width:"100%", height:"200px" %>
+            <a href="#cbr600modal" data-toggle="modal" class="list-group-item milink">CBR600RR</a>
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="cbr600modal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/cbr600.png", class:"img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p>Marca: Honda </p>
+                    <p>Motor: 599cc</p>
+                    <p>Potencia: 120Hp</p>                       <p>Capacidad tanque: 18.2 L</p>
+                    <p>Vigencia: Desde 2013</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/daytona675.jpg", width:"100%", height:"200px" %>
+            <a href="#daytona675modal" data-toggle="modal" class="list-group-item milink">DAYTONA675</a>
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="daytona675modal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/daytona675.jpg", class:" img-responsive" %>
+                  </div>
+                  <div class="modal-body">
+                    <p>Marca: Triumph </p>
+                    <p>Motor: 675cc</p>
+                    <p>Potencia: 131Hp</p>                       <p>Capacidad tanque: 17 L</p>
+                    <p>Vigencia: Desde 2013</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <%= image_tag "Imagenes/f3.jpg", width:"100%", height:"200px" %>
+            <a href="#f3modal" data-toggle="modal" class="list-group-item milink">F3</a>
+
+            <!-- MODAL PARA FOTO -->
+            <div class="modal fade" id="f3modal" role="dialog">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <%= image_tag "Imagenes/f3.jpg", class:"img-responsive" %>
+                    <div class="modal-body">
+                      <p><span style="font-weight:bold">Marca:</span> MV Agusta </p>
+                      <p><span style="font-weight:bold">Motor:</span> 675cc</p>
+                      <p><span style="font-weight:bold">Potencia:</span> 110Hp</p>          
+                      <p><span style="font-weight:bold">Capacidad tanque:</span> 16 L</p>
+                      <p><span style="font-weight:bold">Vigencia:</span> Desde 2013</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- FIN MODAL FOTO -->
+
+          </div>
+        </div>
+
+       </div>
+      </div>
+    <!-- FINAL FILA DOS -->
+
+    <!-- PAGINACION -->
+
+    <div class="row">
+      <div clas="col-sm-12 text-center">
+        <ul class="pagination pagination-sm">
+          <li class="active"><a href="home.html">1</a></li>
+          <li><a href="#">2</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FIN PAGINACION -->
+
+    </div>
+
+    
+
+  </div>
+</div>
+
+<footer class="cotainer-fluid text-center">
+  <p>Todos los derechos reservados</p>
+</footer>
+
+
+</body>
+</html>
