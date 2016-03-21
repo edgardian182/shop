@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'power', to: 'shop#power'
   get 'power/r6galeria', to: 'shop#r6galeria'
   get 'power/r6venta', to: 'shop#r6venta'
+  get 'power/zx6rgaleria', to: 'shop#zx6rgaleria'
+  get 'power/zx6rventa', to: 'shop#zx6rventa'
   get 'power1000', to: 'shop#power1000'
 
   # The priority is based upon order of creation: first created -> highest priority.

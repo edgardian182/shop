@@ -1,0 +1,43 @@
+<div class="col-sm-2 sidenav">
+      <!-- <div class="list-group">
+        <p><a href="#" class="list-group-item active">Motos</a></p>
+        <p><a href="#" class="list-group-item">Autos</a></p>
+        <p><a href="#" class="list-group-item">Aviones</a></p>
+        <p><a href="#" class="list-group-item">Helicopteros</a></p>
+      </div> -->
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Motos</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class=""><%= link_to '600cc', power_path, class:"list-group-item" %></div>
+        <div class=""><%= link_to '1000cc', power1000_path, class:"list-group-item" %></div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Autos</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Contenido autos</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Aviones</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Contenido aviones</div>
+      </div>
+    </div>
+  </div> 
+
+</div>
