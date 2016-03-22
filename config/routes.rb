@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'power/r6venta', to: 'shop#r6venta'
   get 'power/zx6rgaleria', to: 'shop#zx6rgaleria'
   get 'power/zx6rventa', to: 'shop#zx6rventa'
+  get 'power/gsxr600galeria', to: 'shop#gsxr600galeria'
+  get 'power/gsxr600venta', to: 'shop#gsxr600venta'
   get 'power1000', to: 'shop#power1000'
 
   # The priority is based upon order of creation: first created -> highest priority.

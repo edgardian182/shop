@@ -16,6 +16,12 @@ class ShopController < ApplicationController
     
     def zx6rventa
     end
+    
+    def gsxr600galeria
+    end
+    
+    def gsxr600venta
+    end
 
   def power1000
   end
